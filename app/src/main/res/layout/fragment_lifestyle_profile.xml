@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LifestyleProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintBottom_toTopOf="@id/etUserSmokingHabits"
+            android:text="Edit"/>
+
+        <TextView
+            android:id="@+id/tvUserSmokingHabits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:text="Smoking Habits"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton1" />
+
+        <EditText
+            android:id="@+id/etUserSmokingHabits"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add details"
+            android:layout_marginLeft="60dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvUserSmokingHabits"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton1" />
+
+        <TextView
+            android:id="@+id/tvUserAlcoholConsumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Alcohol Consumption"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserSmokingHabits" />
+
+        <EditText
+            android:id="@+id/etUserAlcoholConsumption"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add details"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintTop_toBottomOf="@id/etUserSmokingHabits" />
+
+        <TextView
+            android:id="@+id/tvUserActivityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Activity Level"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserAlcoholConsumption" />
+
+        <EditText
+            android:id="@+id/etUserActivityLevel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserAlcoholConsumption"
+            app:layout_constraintTop_toBottomOf="@id/etUserAlcoholConsumption" />
+
+        <TextView
+            android:id="@+id/tvUserFoodPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:text="Food Preference"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserActivityLevel" />
+
+        <EditText
+            android:id="@+id/etUserFoodPreference"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add lifestyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserActivityLevel"
+            app:layout_constraintTop_toBottomOf="@id/etUserActivityLevel" />
+
+        <TextView
+            android:id="@+id/tvUserOccupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:text="Occupation"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserFoodPreference" />
+
+        <EditText
+            android:id="@+id/etUserOccupation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add occupation"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserFoodPreference"
+            app:layout_constraintTop_toBottomOf="@id/etUserFoodPreference" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

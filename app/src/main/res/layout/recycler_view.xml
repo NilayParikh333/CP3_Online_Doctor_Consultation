@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLdoctorInfo">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/yellow"
+            android:id="@+id/cvAvailableDoctors">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgDoctor1"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/doctor1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/doctor1Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="Dr Sushmita Sharma"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgDoctor1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/doctor1Experience"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <TextView
+            android:id="@+id/doctor1Experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginVertical="60dp"
+            android:text="10 years of Experience"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/doctor1Name"
+            app:layout_constraintTop_toBottomOf="@id/doctor1Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="60dp"/>
+
+        <TextView
+            android:id="@+id/doctor1Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp"
+            android:text="4.7/5"
+            app:layout_constraintStart_toStartOf="@id/doctor1Experience"
+            app:layout_constraintTop_toBottomOf="@id/doctor1Experience"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="0dp"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="100dp"
+            tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

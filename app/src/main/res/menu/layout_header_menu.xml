@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itm_goProfilePage"
+        android:title="View and Edit Profile"
+        android:icon="@drawable/ic_baseline_person_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_MedicalRecords"
+        android:title="Medical Records"
+        android:icon="@drawable/ic_baseline_medical_services_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_ReadHealth"
+        android:title="Read About Health"
+        android:icon="@drawable/ic_baseline_article_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_HelpCenter"
+        android:title="Help Center"
+        android:icon="@drawable/ic_baseline_help_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_TandC"
+        android:title="Terms and Conditions"
+        android:icon="@drawable/ic_baseline_settings_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_RateUs"
+        android:title="Rate Us"
+        android:icon="@drawable/ic_baseline_star_border_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_CheckEvents"
+        android:title="Check Events"
+        android:icon="@drawable/ic_baseline_event_24">
+    </item>
+
+    <item
+        android:id="@+id/itm_Logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_login_24">
+    </item>
+
+</menu>

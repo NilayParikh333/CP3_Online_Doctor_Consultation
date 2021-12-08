@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/notFeelingWell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Not feeling too well?"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/weAreOffering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We are Offerings"
+        app:layout_constraintTop_toBottomOf="@id/notFeelingWell"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"/>
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/cvVideoConsult"
+         android:layout_width="150dp"
+         android:layout_height="200dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/weAreOffering"
+         android:layout_marginHorizontal="50dp"
+         android:layout_marginVertical="20dp">
+
+     <ImageView
+         android:id="@+id/ivVideoConsult"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/weAreOffering"
+         android:src="@drawable/videoconsultdoctor" />
+
+         <TextView
+             android:id="@+id/tvVideoConsult"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="160dp"
+             android:layout_marginLeft="10dp"
+             android:text="Instant Video Consultation"
+             android:textStyle="bold"/>
+
+     </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBuyItems"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:layout_constraintStart_toEndOf="@id/cvVideoConsult"
+            app:layout_constraintTop_toBottomOf="@id/weAreOffering"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="20dp">
+
+            <ImageView
+                android:id="@+id/ivBuyItems"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weAreOffering"
+                android:src="@drawable/medicinedeliveryboy" />
+
+            <TextView
+                android:id="@+id/tvBuyItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="10dp"
+                android:text="Essentials for yourself"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/freeExpertAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cvVideoConsult"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Free Experts answers on your health questions"
+            android:textStyle="bold"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="50dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/QA1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/freeExpertAnswers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="50dp"
+            app:cardCornerRadius="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/QAPerson1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user1"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="80dp"
+                android:text="Asked for male   1h ago"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="20dp"
+                android:text="28 years, Vijayvada"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Que1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="70dp"
+                android:text="Donate platelates"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="85dp"
+                android:text="Respected sir, I have taken vaccine second dose of covishield on Thursday(26/08/2021).Can I donate plateless?Please calrify Thanking you sir."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="170dp"
+                android:text="answered by 2 doctors"
+                android:textStyle="bold"
+                android:textColor="@color/dark_blue"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

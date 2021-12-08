@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_userNameInProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:text="Name"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="70dp"
+            android:text="Loading..."
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_userNameInProfile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageInProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ProfileLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userImageInProfile" />
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            app:layout_constraintTop_toBottomOf="@id/ProfileLine1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="7dp"
+            android:layout_marginHorizontal="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvUserContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:text="Contact Number"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton" />
+
+        <EditText
+            android:id="@+id/etUserContactNumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="+91 8460642744"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton" />
+
+
+        <TextView
+            android:id="@+id/tvUserGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Gender"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserContactNumber" />
+
+        <EditText
+            android:id="@+id/etUserGender"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Male/Female"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserContactNumber"
+            app:layout_constraintTop_toBottomOf="@id/etUserContactNumber" />
+
+        <!--        <Spinner-->
+        <!--            android:id="@+id/personGender"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/etUserEmailId"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/etUserEmailId"-->
+        <!--            android:layout_marginVertical="20dp"/>-->
+
+        <TextView
+            android:id="@+id/tvUserDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Date of Birth"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserGender" />
+
+        <EditText
+            android:id="@+id/etUserDOB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="13/04/2001"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserGender"
+            app:layout_constraintTop_toBottomOf="@id/etUserGender" />
+
+        <TextView
+            android:id="@+id/tvUserBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Blood Group"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserDOB" />
+
+        <EditText
+            android:id="@+id/etUserBloodGroup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="B+"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserDOB"
+            app:layout_constraintTop_toBottomOf="@id/etUserDOB" />
+
+        <TextView
+            android:id="@+id/tvUserMaritialStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Maritial Status"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserBloodGroup" />
+
+        <EditText
+            android:id="@+id/etUserMaritialStatus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Married or not"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="3dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserBloodGroup"
+            app:layout_constraintTop_toBottomOf="@id/etUserBloodGroup" />
+
+        <TextView
+            android:id="@+id/tvUserHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Height"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserMaritialStatus" />
+
+        <EditText
+            android:id="@+id/etUserHeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="7.5 inch"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="0dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserMaritialStatus"
+            app:layout_constraintTop_toBottomOf="@id/etUserMaritialStatus" />
+
+        <TextView
+            android:id="@+id/tvUserWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Weight"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserHeight" />
+
+        <EditText
+            android:id="@+id/etUserWeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="60Kg"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="0dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserHeight"
+            app:layout_constraintTop_toBottomOf="@id/etUserHeight" />
+
+        <TextView
+            android:id="@+id/tvUserLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Location"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserWeight" />
+
+        <EditText
+            android:id="@+id/etUserLocation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Patan"
+            android:layout_marginVertical="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserWeight"
+            app:layout_constraintTop_toBottomOf="@id/etUserWeight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

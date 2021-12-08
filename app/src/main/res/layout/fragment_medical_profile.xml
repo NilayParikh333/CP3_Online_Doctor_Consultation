@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MedicalProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintBottom_toTopOf="@id/etUserAllergies"
+            android:text="Edit"/>
+
+        <TextView
+            android:id="@+id/tvUserAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:text="Allergies"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton2" />
+
+        <EditText
+            android:id="@+id/etUserAllergies"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Allergies"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton2" />
+
+        <TextView
+            android:id="@+id/tvUserInjuries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:text="Injuries"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserAllergies" />
+
+        <EditText
+            android:id="@+id/etUserInjuries"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Incident"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserAllergies"
+            app:layout_constraintTop_toBottomOf="@id/etUserAllergies" />
+
+        <TextView
+            android:id="@+id/tvUserSurgeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:text="Surgeries"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserInjuries" />
+
+        <EditText
+            android:id="@+id/etUserSurgeries"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Surgeries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserInjuries"
+            app:layout_constraintTop_toBottomOf="@id/etUserInjuries" />
+
+        <TextView
+            android:id="@+id/tvUserCurrentMedications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:text="Current Medications"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserSurgeries" />
+
+        <EditText
+            android:id="@+id/etUserCurrentMedications"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Meditions"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etUserSurgeries"
+            app:layout_constraintStart_toEndOf="@id/etUserCurrentMedications"
+            app:layout_constraintTop_toBottomOf="@id/etUserSurgeries" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

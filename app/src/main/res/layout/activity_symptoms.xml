@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".SymptomsActivity">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSearchSymptoms"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Search Health Problems / Symptoms"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/searchSymptom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tvSearchSymptoms"-->
+<!--            app:defaultQueryHint="Eg. Cold,cough,fever"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Choose from the Top Specialists"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/searchSymptom"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities1"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout1"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVCorona"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/coronavirus"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVGynaecology"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/gynaecology"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVGeneralPhysician"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/physician"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVDermatology"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/dermatology"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVOrthopedic"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/orthopedic"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvCorona"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Coronavirus"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvGynaecology"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Gynecology"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPhysician"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="General Physician"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvDermatology"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Dermatology"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvOrthopedic"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Orthopedic"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVPediatrics"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/pediatrics"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVPsychiatry"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/psychiatry"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVStomachAndDigestion"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/stomachanddigestion"/>-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:id="@+id/cIVEarNoseThroat"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/earnosethroat"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPediatrics"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Pediatrics"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPsychiatry"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Psychiatry"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvStomachAndDigestion"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Stomach and Digestion"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvEarNoseThroat"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Ear,Nose, Throat"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Common Health Issues"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType1"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVStomachPain"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/stomachpain"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVVertigo"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/vertigo"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVAcne"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/acne"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVPCOS"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/pcos"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvStomachPain"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Stomach Pain"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvVertigo"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Vertigo"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvAcne"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Acne"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPCOS"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="PCOS"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVEczema"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/eczema"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVHeadaches"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/headache"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVFungalInfection"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/fungalinfection"/>-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:id="@+id/cIVBackPain"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/backpain"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvEczema"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Eczema"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvHeadaches"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Headaches"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvFungalInfection"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Fungal Infection"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvBackPain"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Back Pain"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Orthopedist"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType3"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities4"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--        <TableLayout-->
+<!--            android:id="@+id/tableLayout4"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/cIVKneePain"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:src="@drawable/kneepain"/>-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/cIVShoulderPain"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:src="@drawable/shoulderpain"/>-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/cIVLegPain"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:src="@drawable/legpain"/>-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/cIVCarpalTunnelSyndrome"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:src="@drawable/carpeltunnelsyndrome"/>-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvKneePain"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Knee Pain"-->
+<!--                android:textSize="8dp"-->
+<!--                android:textAlignment="center"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvShoulderPain"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Shoulder Pain"-->
+<!--                android:textSize="8dp"-->
+<!--                android:textAlignment="center"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvLegPain"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Leg Pain"-->
+<!--                android:textSize="8dp"-->
+<!--                android:textAlignment="center"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvCarpelTunnelSyndrome"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="CarpelTunnelSyndrome"-->
+<!--                android:textSize="8dp"-->
+<!--                android:textAlignment="center"/>-->
+
+<!--        </TableRow>-->
+<!--        </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="General Physician"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType2"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities3"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout3"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVFever"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/fever"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVHighBP"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/highbp"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVDizziness"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/dizziness"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVPneumonia"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/pneumonia"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvFever"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Fever"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvHighBP"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="High Blood Pressure"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvDizziness"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Dizziness"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPneumonia"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Pneumonia"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Dermatologist"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType4"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout5"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVVitiligo"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/vitiligo"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVHairLoss"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/hairloss"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVAcneScars"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/acnescars"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVDandruff"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/dandruff"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvVitiligo"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Vitiligo"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvHairLoss"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hair Loss"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvAcneScars"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Acne Scars"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvDandruff"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Dandruff"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ear-Nose-Throat (ENT) Specialist"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType5"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities6"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout6"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVSoreThroat"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/sorethroat"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVSnoring"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/snoring"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVCoughing"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/coughing"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVMouthSores"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/mouthsores"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvSoreThroat"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Sore Throat"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvSnoring"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Snoring"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvCoughing"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Coughing"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvMouthSores"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Mouth Sores"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChooseSpecialities7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Gynecologist/Obstetrician"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/cvDiseasesType6"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvDiseasesType7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvChooseSpecialities7"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout7"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <TableRow-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="fill_parent">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVMenopause"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/menopause"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVIrregularPeriods"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/irregularperiods"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVOvarianCysts"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/ovariancysts"/>-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/cIVVaginalDischarge"-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/vaginaldischarge"/>-->
+
+<!--                </TableRow>-->
+
+<!--                <TableRow>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvMenopause"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Menopause"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvIrregularPeriods"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Irregular Periods"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvCOvarianCysts"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Ovarian Cysts"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvVaginalDischarge"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Vaginal Discharge"-->
+<!--                        android:textSize="8dp"-->
+<!--                        android:textAlignment="center"/>-->
+
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</ScrollView>-->
